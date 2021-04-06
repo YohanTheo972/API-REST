@@ -1,0 +1,54 @@
+@import url(IMG_0472.JPG);
+body {
+}
+
+.nav {
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background-color: grey;
+	border-bottom: 2px ridge black;
+	opacity: .8;
+}
+
+.li {
+	display: inline-block;
+	font-size: 30px;
+	padding-right: 20px;
+	font-family: 'Poiret One', sans-serif;
+	font-weight: bold;
+}
+
+.selection:hover {
+	cursor: pointer;
+	text-shadow: 0 0 3px #fff;
+}
+
+
+
+.text {
+	font-family: Helvetica;
+	position: relative;
+	top: 75px;
+	left: 8%;
+}
+
+
+
+.box {
+	width: 25%;
+	background-color: #d9d9d9;
+	border: 2px solid black;
+	text-align: center;
+	display: inline-block;
+}
+
+[id^="text"]:checked + .text {
+	opacity: 1;
+	transition: opacity 0.5s;
+}
+
+.text-home-trigger {
+	visibility: hidden;
+}

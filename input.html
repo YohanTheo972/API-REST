@@ -1,0 +1,50 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="covid.js"></script>
+<link rel="stylesheet" href="swag.css">
+<div class="nav">
+	<div class="selections">
+		<ul>
+			<li class="li sel-one">
+				<label class="selection" for="text-home-trigger">Accueil</label>
+			</li>
+			<li class="li sel-two">
+				<label class="selection" for="text-about-trigger">A Propos</label>
+			</li>
+			<li class="li sel-thr">
+				<label class="selection" for="text-contact-trigger">Contact</label>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="container">
+	<section class="text box home-text">
+		<h1>Salut!</h1>
+		<p>Ici vous pourrez consulter le nombre de cas du Covid-19 par continent</p>
+	</section>
+	<section class="text box about-text">
+		<h1>Je suis Yoan THEOPHILE-CATHERINE ..</h1>
+		<p>.. Et je suis actuellement en formation de développeur web / web mobile au RSMA de Martinique.</p>
+	</section>
+	<section class="text box contact-text">
+		<h1>Contactez-moi</h1>
+		<p>Prenez contact avec moi lorsque les poules auront des dents.</p>
+	</section>
+</div><br><br><br><br><br>
+
+<center><h1>
+<form action="/action_page.php">
+	<input type="search" id="search" placeholder="Tapez votre recherche" size="30"/>
+	<input type="button" value="Chercher" onclick="buttonClickGET()">
+	<p><u>Sélectionner le type de recherche :</u></p>
+	<input type="radio" id="country" name="type" value="countries" checked>
+	<label for="country">Pays</label><br>
+	<input type="radio" id="continent" name="type" value="continents">
+	<label for="continent">Continents</label><br>
+
+</form></h1>
+</center>
+
+<div id="results">
+
+</div>
